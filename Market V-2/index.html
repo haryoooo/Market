@@ -19,19 +19,18 @@
                     <br>
 
                     <label>Harga : </label> 
-                        <input type="number" name="" id="Harga">
-                        <input type="number" name="" id="Harga">
+                        <input type="number" name="" id="HargaMin">
+                        <input type="number" name="" id="HargaMax">
                     <br>
                     <br>
 
                     <label>Category :  </label>
-                        <select name="" id="category">
-                            <option value="All">All</option>
+                        <select name="" id="categoryFilter">
                         </select>
                     <br>
                     <br>
                     
-                    <input type="button" value="Reset" >
+                    <input type="button" value="Reset" id="ResetButton">
 
             </fieldset>
             </form>
@@ -46,13 +45,11 @@
 
                     <input type="text" name="" id="namaBaru" placeholder="Nama">
                     <input type="number" name="" id="hargaBaru" placeholder="Harga">
-                    <select name="" id="">
-                        <option value="Fast Food">Fast Food</option>
-                        <option value="ELectronic">Electronic</option>
-                        <option value="Cloth">Cloth</option>
-                        <option value="Fruit">Fruit</option>
+                    <select name="" id="categoryList">
                     </select>
                     <input type="text" name="" id="stockBaru" placeholder="Stock">
+
+                    <input type="button" value="Input" id="inputButton">
 
                 </fieldset>
             </form>
@@ -61,6 +58,7 @@
         <div class="tableData">
             <br>
             <br>
+            
             <fieldset>
                 <legend>Tabel Data</legend>
 
@@ -80,11 +78,15 @@
                     </tbody>
                 </thead>
             
-                <tr id="writeFill">
+
+            <tbody id="writeFill">
+                <tr>
 
 
 
                 </tr>
+            </tbody>
+
 
         </table>
 
